@@ -1,0 +1,41 @@
+{
+    "manifest_version": 3,
+    "name": "HelpMeOut",
+    "description" : "it records the user's screen",
+    "version": "1.0.1",
+    "icons" : {
+        "16" : "/public/iCON 7 1.png",
+        "48" : "/public/iCON 7 1.png",
+        "128" : "/public/iCON 7 1.png"
+    },
+    
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16" : "/public/iCON 7 1.png",
+            "48" : "/public/iCON 7 1.png",
+            "128" : "/public/iCON 7 1.png"
+        }
+    },
+
+    "background": {
+        "service_worker": "background.js"
+    },
+
+    "host_permissions": [
+        "http://*/",
+        "https://*/*"
+    ],
+    
+    "permissions": [
+        "scripting",
+        "tabs",
+        "activeTab"
+    ]
+}
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sora:wght@100;200;300;400;500;600;700;800&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+main{
+    padding: 1rem;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+}
+
+.topLeft{
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.topLeft h1{
+    font-size: 1rem;
+    font-family: 'Sora', sans-serif;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.topRight{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.topRight button{
+    all: unset;
+}
+
+
+.topRight button:hover{
+    cursor: pointer;
+}
+
+.head p{
+    color: #413C6D;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.second{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.4rem;
+}
+
+.secondLeft, .secondRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #928FAB;
+    font-family: 'Work Sans', sans-serif;
+    font-size: .875rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.secondLeft:hover, .secondRight:hover{
+    color: #413C6D;
+}
+
+.second svg:hover path{
+    stroke: #120B48;
+}
+
+.camera, .audio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem  0.75rem 0.75rem 1rem;
+    border: 2px solid #100A42;
+    border-radius: 0.75rem;
+}
+
+.cameraLeft, .audioLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cameraLeft span,.audioLeft  span{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.audio{
+    margin-top: 1rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2.8rem;
+    height: 1.45rem;
+}
+
+/* .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+} */
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #120B48;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #120b48;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.625rem);
+    -ms-transform: translateX(1.625rem);
+    transform: translateX(1.625rem);
+}
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 2.125rem;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.record{
+    background-color: #120B48;
+    width: 100%;
+    padding: 1rem;
+    color: #FAFDFF;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    border-radius: 0.75rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    line-height: normal;
+}
+
+main{
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.record:hover{
+    background-color: #100A42;
+}
